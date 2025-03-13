@@ -16,7 +16,7 @@ async function calculateCalories() {
     }
     
     try {
-        const response = await fetch("http://localhost:5000/api/calculate-calories", {
+        const response = await fetch("https://calories-gdrm.onrender.com/api/calculate-calories", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
