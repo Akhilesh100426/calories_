@@ -1,0 +1,146 @@
+ * {
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+.body-container {
+    width: 100%;
+    margin-top: 2.5 rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+.container h1 {
+    text-align: center;
+    margin-top: 4.5rem;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container form {
+    width: 100%;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px; 
+    border: none;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+}
+
+.container form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.container form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.container form button:hover {
+    background-color: #45a049;
+}
+.container form button:active {
+    background-color: #3e8e41;
+}
+.container output {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+#result {
+    color: #dfe614;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+#ponderal{
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#comment {
+    color: #3186d0;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#error {
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#graphBtn {
+    background-color: #4CAF50; /* Green background */
+    border: none;              /* Remove borders */
+    color: white;              /* White text */
+    padding: 15px 32px;       /* Padding: top/bottom 15px, left/right 32px */
+    text-align: center;        /* Centered text */
+    text-decoration: none;     /* Remove underline from links */
+    display: inline-block;     /* Make the button inline */
+    font-size: 16px;          /* Font size */
+    margin: 4px 2px;          /* Small margin around button */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 8px;       /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.bmi-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+#graph {
+    width: 100%;
+    max-width: 600px; 
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+#graph img {
+    max-width: 100%;
+    height: auto;
+}

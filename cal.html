@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+    <script src="bmi.js" defer></script> 
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <div id="input">
+                <p>Enter your age, height, and weight to calculate your BMI.</p>
+            </div>
+            <form onsubmit="return false;">
+                <label for="age">Age: </label>
+                <input type="number" id="age" placeholder="Enter age"><br>
+
+                <label for="height">Height (cm): </label>
+                <input type="number" id="height" placeholder="Enter height in cm"><br>
+
+                <label for="weight">Weight (kg): </label>
+                <input type="number" id="weight" placeholder="Enter weight in kg"><br>
+
+                <button type="button" id="btn" onclick="calculateBMI()">Calculate</button>
+            </form>
+
+            <div id="output">
+                <p id="error"></p>
+                <p id="result"></p>
+                <p id="ponderal"></p>
+                <p id="comment"></p>
+                <button type="button" id="graphBtn" onclick="checkGraph()" style="display: none;">Check BMI Graph</button>
+            </div>
+
+            <div id="graph-container">
+                <canvas id="bmiChart"></canvas> <!-- BMI Chart -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkGraph() {
+            document.getElementById('graph-container').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
